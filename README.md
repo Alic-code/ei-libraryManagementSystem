@@ -21,14 +21,14 @@ preço, status e número total de livros disponíveis na Biblioteca.
 ##  ℹ️ Neste projeto de banco de dados, você deve criar as seguintes tabelas:
 
 
-### ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)  _`tbl_publisher:`_ Esta tabela armazena informações sobre as editoras dos livros.
+### _`tbl_publisher:`_ Esta tabela armazena informações sobre as editoras dos livros.
 
 
 - _```publisher_PublisherName:```_ O nome da editora. Este é o identificador único para cada editora e é a chave primária da tabela.
 - _```publisher_PublisherAddress:```_ O endereço da editora.
 - _```publisher_PublisherPhone:```_ O número de telefone da editora.
 
-### ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)   _`tbl_book:`_ Esta tabela contém detalhes sobre os livros.
+###_`tbl_book:`_ Esta tabela contém detalhes sobre os livros.
 
 - _```book_BookID:```_ O identificador único do livro. É uma chave primária autoincrementada.
 - _```book_Title:```_ O título do livro.
@@ -47,7 +47,7 @@ preço, status e número total de livros disponíveis na Biblioteca.
 - _```borrower_BorrowerAddress:```_ O endereço do tomador de empréstimo.
 - _```borrower_BorrowerPhone:```_ O número de telefone do tomador de empréstimo.
 
-### ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)   _`tbl_book_loans:`_ Esta tabela registra os empréstimos de livros feitos pelos tomadores de empréstimo.
+### _`tbl_book_loans:`_ Esta tabela registra os empréstimos de livros feitos pelos tomadores de empréstimo.
 
 - _```book_loans_LoansID:```_ O identificador único do empréstimo. É uma chave primária autoincrementada.
 - _```book_loans_BookID:```_ O ID do livro emprestado. É uma chave estrangeira referenciando a tabela tbl_book.
@@ -56,14 +56,14 @@ preço, status e número total de livros disponíveis na Biblioteca.
 - _```book_loans_DateOut:```_ A data em que o livro foi emprestado.
 - _```book_loans_DueDate:```_ A data de vencimento do empréstimo.
 
-### ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)  _`tbl_book_copies:`_ Aqui são registradas as cópias dos livros disponíveis em cada filial da biblioteca.
+### _`tbl_book_copies:`_ Aqui são registradas as cópias dos livros disponíveis em cada filial da biblioteca.
 
 - _```book_copies_CopiesID:```_ O identificador único da cópia do livro. É uma chave primária autoincrementada.
 - _```book_copies_BookID:```_ O ID do livro. É uma chave estrangeira referenciando a tabela tbl_book.
 - _```book_copies_BranchID:```_ O ID da filial da biblioteca. É uma chave estrangeira referenciando a tabela tbl_library_branch.
 - _```book_copies_No_Of_Copies:```_ O número de cópias disponíveis.
 
-### ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)  _`tbl_book_authors:`_ Esta tabela registra os autores dos livros.
+### _`tbl_book_authors:`_ Esta tabela registra os autores dos livros.
 
 - _```book_authors_AuthorID:```_ O identificador único do autor. É uma chave primária autoincrementada.
 - _```book_authors_BookID:```_  O ID do livro. É uma chave estrangeira referenciando a tabela tbl_book.
