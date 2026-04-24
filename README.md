@@ -34,13 +34,13 @@ preço, status e número total de livros disponíveis na Biblioteca.
 - _```book_Title:```_ O título do livro.
 - _```book_PublisherName:```_ O nome da editora do livro. É uma chave estrangeira referenciando a tabela tbl_publisher.
 
-### ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)    _`tbl_library_branch:`_ Esta tabela mantém informações sobre as filiais da biblioteca.
+### _`tbl_library_branch:`_ Esta tabela mantém informações sobre as filiais da biblioteca.
 
 - _```library_branch_BranchID:```_ O identificador único da filial da biblioteca. É uma chave primária autoincrementada.
 - _```library_branch_BranchName:```_ O nome da filial da biblioteca.
 - _```library_branch_BranchAddress:```_ O endereço da filial da biblioteca.
 
-### ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)  _`tbl_borrower:`_ Aqui são registrados os dados dos tomadores de empréstimo dos livros.
+### _`tbl_borrower:`_ Aqui são registrados os dados dos tomadores de empréstimo dos livros.
 
 - _```borrower_CardNo:```_ O número do cartão do tomador de empréstimo. É uma chave primária autoincrementada.
 - _```borrower_BorrowerName:```_ O nome do tomador de empréstimo.
